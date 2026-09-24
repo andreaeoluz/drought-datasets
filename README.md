@@ -25,8 +25,6 @@ Neither raw-data acquisition nor SPI computation lives here. Both scripts below 
 ├── dataset_statistics_binary.json
 ├── baselines_regression_<Region>.json
 ├── baselines_classification_<Region>.json
-├── paper_datasets_short.tex        # The companion short paper
-└── references.bib
 ```
 
 ---
