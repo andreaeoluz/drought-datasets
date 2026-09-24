@@ -1,0 +1,327 @@
+[
+  {
+    "region": "Sul",
+    "per_pq": {
+      "p3_q1": {
+        "num_samples": 537,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p3_q3": {
+        "num_samples": 535,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p3_q6": {
+        "num_samples": 532,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p3_q12": {
+        "num_samples": 526,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p6_q1": {
+        "num_samples": 534,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p6_q3": {
+        "num_samples": 532,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p6_q6": {
+        "num_samples": 529,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p6_q12": {
+        "num_samples": 523,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p12_q1": {
+        "num_samples": 528,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p12_q3": {
+        "num_samples": 526,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p12_q6": {
+        "num_samples": 523,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      },
+      "p12_q12": {
+        "num_samples": 517,
+        "target_mean": 0.0004384494968689978,
+        "target_std": 1.0000592470169067
+      }
+    }
+  },
+  {
+    "region": "Sudeste",
+    "per_pq": {
+      "p3_q1": {
+        "num_samples": 537,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p3_q3": {
+        "num_samples": 535,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p3_q6": {
+        "num_samples": 532,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p3_q12": {
+        "num_samples": 526,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p6_q1": {
+        "num_samples": 534,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p6_q3": {
+        "num_samples": 532,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p6_q6": {
+        "num_samples": 529,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p6_q12": {
+        "num_samples": 523,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p12_q1": {
+        "num_samples": 528,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p12_q3": {
+        "num_samples": 526,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p12_q6": {
+        "num_samples": 523,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      },
+      "p12_q12": {
+        "num_samples": 517,
+        "target_mean": 0.0023416976910084486,
+        "target_std": 0.9979227185249329
+      }
+    }
+  },
+  {
+    "region": "Nordeste",
+    "per_pq": {
+      "p3_q1": {
+        "num_samples": 537,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p3_q3": {
+        "num_samples": 535,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p3_q6": {
+        "num_samples": 532,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p3_q12": {
+        "num_samples": 526,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p6_q1": {
+        "num_samples": 534,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p6_q3": {
+        "num_samples": 532,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p6_q6": {
+        "num_samples": 529,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p6_q12": {
+        "num_samples": 523,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p12_q1": {
+        "num_samples": 528,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p12_q3": {
+        "num_samples": 526,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p12_q6": {
+        "num_samples": 523,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      },
+      "p12_q12": {
+        "num_samples": 517,
+        "target_mean": 0.003018176183104515,
+        "target_std": 0.9947946667671204
+      }
+    }
+  },
+  {
+    "region": "Centro-Oeste",
+    "per_pq": {
+      "p3_q1": {
+        "num_samples": 537,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p3_q3": {
+        "num_samples": 535,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p3_q6": {
+        "num_samples": 532,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p3_q12": {
+        "num_samples": 526,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p6_q1": {
+        "num_samples": 534,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p6_q3": {
+        "num_samples": 532,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p6_q6": {
+        "num_samples": 529,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p6_q12": {
+        "num_samples": 523,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p12_q1": {
+        "num_samples": 528,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p12_q3": {
+        "num_samples": 526,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p12_q6": {
+        "num_samples": 523,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      },
+      "p12_q12": {
+        "num_samples": 517,
+        "target_mean": 0.0063209133222699165,
+        "target_std": 0.9932472109794617
+      }
+    }
+  },
+  {
+    "region": "Norte",
+    "per_pq": {
+      "p3_q1": {
+        "num_samples": 537,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p3_q3": {
+        "num_samples": 535,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p3_q6": {
+        "num_samples": 532,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p3_q12": {
+        "num_samples": 526,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p6_q1": {
+        "num_samples": 534,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p6_q3": {
+        "num_samples": 532,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p6_q6": {
+        "num_samples": 529,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p6_q12": {
+        "num_samples": 523,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p12_q1": {
+        "num_samples": 528,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p12_q3": {
+        "num_samples": 526,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p12_q6": {
+        "num_samples": 523,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      },
+      "p12_q12": {
+        "num_samples": 517,
+        "target_mean": 0.0016891146078705788,
+        "target_std": 0.9989299774169922
+      }
+    }
+  }
+]

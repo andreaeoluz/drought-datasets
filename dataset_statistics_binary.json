@@ -1,0 +1,927 @@
+[
+  {
+    "region": "Sul",
+    "per_pqk": {
+      "p3_q1_k-1.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.5121042830540037,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p3_q3_k-1.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.5121495327102804,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p3_q6_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.5131578947368421,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p3_q12_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.5190114068441065,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p6_q1_k-1.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.5112359550561798,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p6_q3_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.5131578947368421,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p6_q6_k-1.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.5160680529300568,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p6_q12_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.5162523900573613,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p12_q1_k-1.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.5170454545454546,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p12_q3_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.5190114068441065,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p12_q6_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.5162523900573613,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p12_q12_k-1.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.5125725338491296,
+        "drought_prevalence": 0.15462962962962962
+      },
+      "p3_q1_k-1.5": {
+        "num_samples": 537,
+        "drought_ratio": 0.2905027932960894,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p3_q3_k-1.5": {
+        "num_samples": 535,
+        "drought_ratio": 0.29158878504672897,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p3_q6_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.2932330827067669,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p3_q12_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.2965779467680608,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p6_q1_k-1.5": {
+        "num_samples": 534,
+        "drought_ratio": 0.29213483146067415,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p6_q3_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.2932330827067669,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p6_q6_k-1.5": {
+        "num_samples": 529,
+        "drought_ratio": 0.2948960302457467,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p6_q12_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.2925430210325048,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p12_q1_k-1.5": {
+        "num_samples": 528,
+        "drought_ratio": 0.29545454545454547,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p12_q3_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.2965779467680608,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p12_q6_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.2925430210325048,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p12_q12_k-1.5": {
+        "num_samples": 517,
+        "drought_ratio": 0.28820116054158607,
+        "drought_prevalence": 0.06698357919429783
+      },
+      "p3_q1_k-2.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.14152700186219738,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p3_q3_k-2.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.14205607476635515,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p3_q6_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.14285714285714285,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p3_q12_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.1444866920152091,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p6_q1_k-2.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.14232209737827714,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p6_q3_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.14285714285714285,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p6_q6_k-2.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.14366729678638943,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p6_q12_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.14149139579349904,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p12_q1_k-2.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.14393939393939395,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p12_q3_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.1444866920152091,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p12_q6_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.14149139579349904,
+        "drought_prevalence": 0.028418369648576712
+      },
+      "p12_q12_k-2.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.13926499032882012,
+        "drought_prevalence": 0.028418369648576712
+      }
+    }
+  },
+  {
+    "region": "Sudeste",
+    "per_pqk": {
+      "p3_q1_k-1.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.7467411545623837,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p3_q3_k-1.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.7457943925233644,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p3_q6_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.7462406015037594,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p3_q12_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.747148288973384,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p6_q1_k-1.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.7471910112359551,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p6_q3_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.7462406015037594,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p6_q6_k-1.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.7448015122873346,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p6_q12_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.745697896749522,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p12_q1_k-1.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.7462121212121212,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p12_q3_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.747148288973384,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p12_q6_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.745697896749522,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p12_q12_k-1.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.746615087040619,
+        "drought_prevalence": 0.1610266189169496
+      },
+      "p3_q1_k-1.5": {
+        "num_samples": 537,
+        "drought_ratio": 0.49162011173184356,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p3_q3_k-1.5": {
+        "num_samples": 535,
+        "drought_ratio": 0.4897196261682243,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p3_q6_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.4924812030075188,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p3_q12_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.4923954372623574,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p6_q1_k-1.5": {
+        "num_samples": 534,
+        "drought_ratio": 0.49063670411985016,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p6_q3_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.4924812030075188,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p6_q6_k-1.5": {
+        "num_samples": 529,
+        "drought_ratio": 0.4896030245746692,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p6_q12_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.4894837476099426,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p12_q1_k-1.5": {
+        "num_samples": 528,
+        "drought_ratio": 0.49053030303030304,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p12_q3_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.4923954372623574,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p12_q6_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.4894837476099426,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p12_q12_k-1.5": {
+        "num_samples": 517,
+        "drought_ratio": 0.4932301740812379,
+        "drought_prevalence": 0.07436940917476706
+      },
+      "p3_q1_k-2.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.29608938547486036,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p3_q3_k-2.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.297196261682243,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p3_q6_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.29887218045112784,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p3_q12_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.30038022813688214,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p6_q1_k-2.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.29775280898876405,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p6_q3_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.29887218045112784,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p6_q6_k-2.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.29867674858223064,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p6_q12_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.30019120458891013,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p12_q1_k-2.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.29924242424242425,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p12_q3_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.30038022813688214,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p12_q6_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.30019120458891013,
+        "drought_prevalence": 0.027783591460862286
+      },
+      "p12_q12_k-2.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.30174081237911027,
+        "drought_prevalence": 0.027783591460862286
+      }
+    }
+  },
+  {
+    "region": "Nordeste",
+    "per_pqk": {
+      "p3_q1_k-1.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.813780260707635,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p3_q3_k-1.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.8130841121495327,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p3_q6_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.8120300751879699,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p3_q12_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.8098859315589354,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p6_q1_k-1.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.8127340823970037,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p6_q3_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.8120300751879699,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p6_q6_k-1.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.8109640831758034,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p6_q12_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.8087954110898662,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p12_q1_k-1.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.8106060606060606,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p12_q3_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.8098859315589354,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p12_q6_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.8087954110898662,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p12_q12_k-1.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.8065764023210832,
+        "drought_prevalence": 0.15344855543155828
+      },
+      "p3_q1_k-1.5": {
+        "num_samples": 537,
+        "drought_ratio": 0.6070763500931099,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p3_q3_k-1.5": {
+        "num_samples": 535,
+        "drought_ratio": 0.6074766355140186,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p3_q6_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.6052631578947368,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p3_q12_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.6026615969581749,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p6_q1_k-1.5": {
+        "num_samples": 534,
+        "drought_ratio": 0.6067415730337079,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p6_q3_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.6052631578947368,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p6_q6_k-1.5": {
+        "num_samples": 529,
+        "drought_ratio": 0.6049149338374291,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p6_q12_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.6003824091778203,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p12_q1_k-1.5": {
+        "num_samples": 528,
+        "drought_ratio": 0.6041666666666666,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p12_q3_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.6026615969581749,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p12_q6_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.6003824091778203,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p12_q12_k-1.5": {
+        "num_samples": 517,
+        "drought_ratio": 0.5957446808510638,
+        "drought_prevalence": 0.06625890634389218
+      },
+      "p3_q1_k-2.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.3761638733705773,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p3_q3_k-2.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.37570093457943926,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p3_q6_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.37218045112781956,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p3_q12_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.37072243346007605,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p6_q1_k-2.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.37453183520599254,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p6_q3_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.37218045112781956,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p6_q6_k-2.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.3705103969754253,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p6_q12_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.367112810707457,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p12_q1_k-2.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.3712121212121212,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p12_q3_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.37072243346007605,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p12_q6_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.367112810707457,
+        "drought_prevalence": 0.022838393376637
+      },
+      "p12_q12_k-2.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.3597678916827853,
+        "drought_prevalence": 0.022838393376637
+      }
+    }
+  },
+  {
+    "region": "Centro-Oeste",
+    "per_pqk": {
+      "p3_q1_k-1.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.7430167597765364,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p3_q3_k-1.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.7420560747663552,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p3_q6_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.7406015037593985,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p3_q12_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.7414448669201521,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p6_q1_k-1.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.7415730337078652,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p6_q3_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.7406015037593985,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p6_q6_k-1.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.7410207939508506,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p6_q12_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.739961759082218,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p12_q1_k-1.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.740530303030303,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p12_q3_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.7414448669201521,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p12_q6_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.739961759082218,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p12_q12_k-1.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.7427466150870407,
+        "drought_prevalence": 0.14763421292083712
+      },
+      "p3_q1_k-1.5": {
+        "num_samples": 537,
+        "drought_ratio": 0.5400372439478585,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p3_q3_k-1.5": {
+        "num_samples": 535,
+        "drought_ratio": 0.5401869158878505,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p3_q6_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.5394736842105263,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p3_q12_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.5399239543726235,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p6_q1_k-1.5": {
+        "num_samples": 534,
+        "drought_ratio": 0.5393258426966292,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p6_q3_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.5394736842105263,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p6_q6_k-1.5": {
+        "num_samples": 529,
+        "drought_ratio": 0.5406427221172023,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p6_q12_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.5372848948374761,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p12_q1_k-1.5": {
+        "num_samples": 528,
+        "drought_ratio": 0.5397727272727273,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p12_q3_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.5399239543726235,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p12_q6_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.5372848948374761,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p12_q12_k-1.5": {
+        "num_samples": 517,
+        "drought_ratio": 0.5377176015473888,
+        "drought_prevalence": 0.07410580887226323
+      },
+      "p3_q1_k-2.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.3575418994413408,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p3_q3_k-2.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.35700934579439253,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p3_q6_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.35526315789473684,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p3_q12_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.35551330798479086,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p6_q1_k-2.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.35580524344569286,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p6_q3_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.35526315789473684,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p6_q6_k-2.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.3553875236294896,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p6_q12_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.3575525812619503,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p12_q1_k-2.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.3560606060606061,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p12_q3_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.35551330798479086,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p12_q6_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.3575525812619503,
+        "drought_prevalence": 0.03387872251991148
+      },
+      "p12_q12_k-2.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.3597678916827853,
+        "drought_prevalence": 0.03387872251991148
+      }
+    }
+  },
+  {
+    "region": "Norte",
+    "per_pqk": {
+      "p3_q1_k-1.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.957169459962756,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p3_q3_k-1.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.9570093457943926,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p3_q6_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.9586466165413534,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p3_q12_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.9600760456273765,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p6_q1_k-1.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.9569288389513109,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p6_q3_k-1.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.9586466165413534,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p6_q6_k-1.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.9603024574669187,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p6_q12_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.9598470363288719,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p12_q1_k-1.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.9602272727272727,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p12_q3_k-1.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.9600760456273765,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p12_q6_k-1.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.9598470363288719,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p12_q12_k-1.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.9613152804642167,
+        "drought_prevalence": 0.14604978870778126
+      },
+      "p3_q1_k-1.5": {
+        "num_samples": 537,
+        "drought_ratio": 0.7951582867783985,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p3_q3_k-1.5": {
+        "num_samples": 535,
+        "drought_ratio": 0.794392523364486,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p3_q6_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.7951127819548872,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p3_q12_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.7965779467680608,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p6_q1_k-1.5": {
+        "num_samples": 534,
+        "drought_ratio": 0.7940074906367042,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p6_q3_k-1.5": {
+        "num_samples": 532,
+        "drought_ratio": 0.7951127819548872,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p6_q6_k-1.5": {
+        "num_samples": 529,
+        "drought_ratio": 0.7977315689981096,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p6_q12_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.7954110898661568,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p12_q1_k-1.5": {
+        "num_samples": 528,
+        "drought_ratio": 0.7973484848484849,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p12_q3_k-1.5": {
+        "num_samples": 526,
+        "drought_ratio": 0.7965779467680608,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p12_q6_k-1.5": {
+        "num_samples": 523,
+        "drought_ratio": 0.7954110898661568,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p12_q12_k-1.5": {
+        "num_samples": 517,
+        "drought_ratio": 0.7969052224371374,
+        "drought_prevalence": 0.06898982196379966
+      },
+      "p3_q1_k-2.0": {
+        "num_samples": 537,
+        "drought_ratio": 0.5679702048417132,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p3_q3_k-2.0": {
+        "num_samples": 535,
+        "drought_ratio": 0.5663551401869159,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p3_q6_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.5657894736842105,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p3_q12_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.5665399239543726,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p6_q1_k-2.0": {
+        "num_samples": 534,
+        "drought_ratio": 0.5655430711610487,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p6_q3_k-2.0": {
+        "num_samples": 532,
+        "drought_ratio": 0.5657894736842105,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p6_q6_k-2.0": {
+        "num_samples": 529,
+        "drought_ratio": 0.5689981096408318,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p6_q12_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.5640535372848948,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p12_q1_k-2.0": {
+        "num_samples": 528,
+        "drought_ratio": 0.5681818181818182,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p12_q3_k-2.0": {
+        "num_samples": 526,
+        "drought_ratio": 0.5665399239543726,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p12_q6_k-2.0": {
+        "num_samples": 523,
+        "drought_ratio": 0.5640535372848948,
+        "drought_prevalence": 0.031265158495641765
+      },
+      "p12_q12_k-2.0": {
+        "num_samples": 517,
+        "drought_ratio": 0.5667311411992263,
+        "drought_prevalence": 0.031265158495641765
+      }
+    }
+  }
+]
