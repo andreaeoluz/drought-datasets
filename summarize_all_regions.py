@@ -9,6 +9,7 @@ REGIONS = ["Sul", "Sudeste", "Nordeste", "Centro-Oeste", "Norte"]
 REGION_LABEL = {"Sul": "South", "Sudeste": "Southeast", "Nordeste": "Northeast",
                 "Centro-Oeste": "Center-West", "Norte": "North"}
 KAPPAS = [-1.0, -1.5, -2.0]
+LONG_Q = (3, 6, 9, 12)  # horizons averaged in the "degradation" summaries
 
 print("=" * 100)
 print("1) REGRESSION DATASET STATS: target_mean/std per region")
@@ -50,13 +51,13 @@ for reg in REGIONS:
 
 print()
 print("=" * 100)
-print("4) REGRESSION BASELINES degradation: mean R2 across q in {3,6,12} at p=12")
+print("4) REGRESSION BASELINES degradation: mean R2 across q in {3,6,9,12} at p=12")
 print("=" * 100)
 for reg in REGIONS:
     rows = json.load(open(f"baselines_regression_{reg}.json"))
     for method in ["persistence", "random_forest"]:
-        vals = [r["results"][method]["r2"] for r in rows if r["p"] == 12 and r["q"] in (3, 6, 12)]
-        print(f"{REGION_LABEL[reg]:14s} {method:16s} mean_R2(q=3,6,12) = {sum(vals)/len(vals):+.3f}   individual={[round(v,3) for v in vals]}")
+        vals = [r["results"][method]["r2"] for r in rows if r["p"] == 12 and r["q"] in LONG_Q]
+        print(f"{REGION_LABEL[reg]:14s} {method:16s} mean_R2(q>=3) = {sum(vals)/len(vals):+.3f}   individual={[round(v,3) for v in vals]}")
 
 print()
 print("=" * 100)
@@ -73,16 +74,17 @@ for reg in REGIONS:
 
 print()
 print("=" * 100)
-print("6) CLASSIFICATION BASELINES degradation: mean AUC across q in {3,6,12} at p=12 (logistic)")
+print("6) CLASSIFICATION BASELINES degradation: mean AUC across q in {3,6,9,12} at p=12")
 print("=" * 100)
 for reg in REGIONS:
     rows = json.load(open(f"baselines_classification_{reg}.json"))
-    vals = [r["results"]["logistic_regression"]["auc_roc"] for r in rows if r["p"] == 12 and r["q"] in (3, 6, 12)]
-    print(f"{REGION_LABEL[reg]:14s} mean_AUC(q=3,6,12) logistic = {sum(vals)/len(vals):.3f}   individual={[round(v,3) for v in vals]}")
+    for method in ["logistic_regression", "random_forest", "persistence"]:
+        vals = [r["results"][method]["auc_roc"] for r in rows if r["p"] == 12 and r["q"] in LONG_Q]
+        print(f"{REGION_LABEL[reg]:14s} {method:20s} mean_AUC(q>=3) = {sum(vals)/len(vals):.3f}   individual={[round(v,3) for v in vals]}")
 
 print()
 print("=" * 100)
-print("7) Sample counts (should be region-invariant) for p in {3,6,12}, q in {1,3,6,12}")
+print("7) Pixel-month sample counts, South (all partitions; = valid pixels x temporal windows)")
 print("=" * 100)
 rows = json.load(open("baselines_regression_Sul.json"))
 for r in rows:

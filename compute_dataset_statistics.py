@@ -31,8 +31,8 @@ BINARY_PROJECT = Path(__file__).resolve().parent.parent / "drought_forecast_bina
 REGRESSION_PROJECT = Path(__file__).resolve().parent.parent / "drought_forecast_regression"
 
 REGIONS = ["Sul", "Sudeste", "Nordeste", "Centro-Oeste", "Norte"]
-P_VALUES = [3, 6, 12]
-Q_VALUES = [1, 3, 6, 12]
+P_VALUES = [3, 6, 9, 12]
+Q_VALUES = [1, 3, 6, 9, 12]
 KAPPA_VALUES = [-1.0, -1.5, -2.0]  # binary framework only
 
 

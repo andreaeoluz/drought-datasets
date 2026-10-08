@@ -1,94 +1,106 @@
 # Two Multivariate Spatiotemporal Climate Datasets for Drought Forecasting in Brazil
 
-Statistical characterization and baseline validation for the two machine-learning-ready datasets used across this thesis: a **binary drought-event** dataset (`drought_forecast_binary`) and a **continuous SPI-regression** dataset (`drought_forecast_regression`). Both are derived from the same 45-year (1980–2024) TerraClimate record, accessed via the Google Earth Engine Python API, covering Brazil's five macro-regions, and share the same spatial validity mask, monthly-anomaly representation, and chronological train/validation/test partition — differing only in their prediction target.
+Code and results for the paper **"Two Multivariate Spatiotemporal Climate Datasets for Drought Forecasting in Brazil: Construction and Validation"**.
 
-This repository does **not** implement a data pipeline of its own. It is a thin analysis layer that characterizes datasets built and cached by the two sibling projects, and validates them with simple baselines before any deep-learning model is trained on them.
-
----
-
-## How this project relates to its two sibling projects
-
-Neither raw-data acquisition nor SPI computation lives here. Both scripts below add exactly **one** of `../drought_forecast_binary` or `../drought_forecast_regression` to `sys.path` at runtime — selected via `--task` — and reuse that project's own `config`/`data` modules to load the already-preprocessed climate cubes and cached SPI. Because the two sibling projects define top-level modules with identical names (`config`, `data`, ...), only one can be on `sys.path` per process; if you need both, run the script twice (once per `--task`), rather than editing it to import both simultaneously.
-
-**Prerequisite:** the target sibling project must already have a populated `outputs/<region>/spi_cache/spi_scale_3.pkl` (i.e. its own `precompute-spi` step must have run first — see that project's README).
+The paper describes the two machine-learning-ready datasets used by the transfer-learning frameworks: a **binary drought-event** dataset (SPI-3 ≤ κ, κ ∈ {−1.0, −1.5, −2.0}) and a **continuous SPI-3** dataset. Both come from the same monthly TerraClimate record (1980–2024) for Brazil's five macro-regions and share the validity mask, input representation and chronological partition; they differ only in the target. This repository characterizes both datasets and validates them with simple baselines.
 
 ---
 
-## Project Structure
+## Related repositories
+
+| Repository | Paper |
+|---|---|
+| [drought_forecast_binary](https://github.com/andreaeoluz/drought_forecast_binary) | Binary rare-drought forecasting with TL |
+| [spi-forecast-continuous](https://github.com/andreaeoluz/spi-forecast-continuous) | Continuous SPI forecasting with TL |
+| [drought-datasets](https://github.com/andreaeoluz/drought-datasets) (this one) | The two datasets used by the TL frameworks |
+| [spi-forecast-ml-dl](https://github.com/andreaeoluz/spi-forecast-ml-dl) | ML vs. DL comparison for SPI forecasting |
+
+---
+
+## Method in brief
+
+- **Data.** Monthly TerraClimate rasters (1980–2024), seven climate variables plus SPI-3, downsampled 3×3 (5×5 in the North) and masked to pixels with ≥ 70% valid training observations.
+- **Split.** Training 1980–2019, validation 2020–2022, test 2023–2024; the SPI Gamma fit uses the training period only.
+- **Samples.** One sample per `p`-month input window and target instant `q`, with p ∈ {3, 6, 9, 12} and q ∈ {1, 3, 6, 9, 12}.
+- **Statistics.** SPI distribution and drought prevalence per region, split and (p, q, κ).
+- **Baselines.** Per-pixel persistence, linear/logistic regression and random forest (regression: WI, R², RMSE, MAE; classification: AUC-ROC, F1, precision, recall).
+
+The datasets are built by the two framework repositories; the scripts here import one of them (`--task`) to load its preprocessed climate cubes and SPI cache.
+
+---
+
+## Repository structure
 
 ```
-.
-├── compute_dataset_statistics.py   # SPI distribution / drought prevalence stats per (p,q[,kappa])
-├── run_baselines.py                # Persistence / linear-or-logistic / random-forest baselines per pixel
-├── summarize_all_regions.py        # One-off script: prints the cross-region summary tables used in the paper
-├── dataset_statistics_regression.json
-├── dataset_statistics_binary.json
-├── baselines_regression_<Region>.json
-├── baselines_classification_<Region>.json
+├── compute_dataset_statistics.py   # SPI distribution and drought prevalence per (p, q[, κ]) -> dataset_statistics_*.json
+├── run_baselines.py                # Persistence / linear or logistic / random-forest baselines -> baselines_*.json
+├── summarize_all_regions.py        # Cross-region numbers and tables from the JSON files
+├── plot_drought_prevalence.py      # Drought prevalence figure -> images/drought_prevalence.*
+└── plot_south_baselines.py         # South baseline skill vs. q -> images/south_baselines_vs_q.*
 ```
 
 ---
 
-## Methodology Notes
+## Installation and data
 
-### Two different notions of "sample count"
-
-`compute_dataset_statistics.py` reports `num_samples` from `ClimateDataset.get_data_info()`, which counts valid **timesteps** (whole-region months with a complete input window and a valid target month) — e.g. 537 for South at `p=3, q=1`. `run_baselines.py` instead builds one row per **pixel-month**, which is orders of magnitude larger (881,754 for the same region and `(p,q)`) since every valid pixel within each valid timestep becomes its own training sample. Both are correct; they just answer different questions ("how many distinct forecast instants?" vs. "how many training examples for a per-pixel model?").
-
-### Leakage-free splitting, reimplemented independently
-
-`run_baselines.py` does not reuse the sibling project's `ClimateDataset` for sample construction — it rebuilds the sliding window in plain NumPy, but reads the exact same calendar boundaries from that project's own `SplitConfig` (train ≤ 2019-12, validation ≤ 2022-12, test = 2023–2024). A sample's train/val/test membership is decided by its **target month's** absolute time, never by its input window's start, so a window may look back across a split boundary without leaking future information into training.
-
-### `drought_prevalence` vs. `drought_ratio`
-
-For the binary dataset, two related but distinct statistics are reported per region and severity threshold κ:
-- **`drought_prevalence`** — fraction of all pixel-months in the *entire* SPI series below κ. Depends only on κ, so it is constant across every `(p, q)` for a fixed threshold.
-- **`drought_ratio`** — fraction of *valid dataset samples* whose target month contains at least one drought pixel anywhere in the region. Varies slightly with `(p, q)`, since the set of eligible target months changes.
-
-`summarize_all_regions.py` also prints the theoretical prevalence expected under a standard-normal SPI, Φ(κ) — Φ(−1.0) ≈ 15.87%, Φ(−1.5) ≈ 6.68%, Φ(−2.0) ≈ 2.28% — alongside the empirical value, to show how closely the zero-inflated-Gamma SPI construction tracks a true standard normal at each severity level.
-
-### Baselines
-
-Three model families are trained per pixel, using the reduced `(p, q)` grid below:
-- **Persistence** — no fitting; the last observed SPI in the input window is the prediction (or, for classification, whether that value already falls below κ).
-- **Linear / Logistic Regression** (`class_weight="balanced"` for classification).
-- **Random Forest** (`n_estimators=100, max_depth=12`; `class_weight="balanced"` for the classifier).
-
-Metrics: WI (Willmott's Index of Agreement — the same formula and role used as the primary model-selection metric in the deep-learning frameworks, so these numbers are directly comparable), RMSE, MAE, R² for the regression task; F1, AUC-ROC, precision, recall for classification.
-
-### Reduced `(p, q)` grid
-
-By default, `run_baselines.py` sweeps `p ∈ {3, 6, 12}`, `q ∈ {1, 3, 6, 12}` (12 combinations) — smaller than the deep-learning frameworks' full grid search (`p ∈ {3, 6, 9, 12}`, `q ∈ {1, 3, 6, 9, 12}`, 20 combinations), since the goal here is only to show that the datasets carry learnable signal across horizons, not to tune hyperparameters. Pass `--p`/`--q` to restrict further.
-
----
-
-## Quick Start
+The scripts expect both framework repositories next to this one, with these folder names:
 
 ```bash
-# Dataset statistics (SPI distribution, drought prevalence)
-python compute_dataset_statistics.py --task regression --region Sul
-python compute_dataset_statistics.py --task binary --all-regions
-
-# Simple baselines per pixel
-python run_baselines.py --task regression --region Sul
-python run_baselines.py --task classification --region Sul --p 12 --q 1
-
-# Cross-region summary tables (reads the JSON files produced above)
-python summarize_all_regions.py
+git clone https://github.com/andreaeoluz/drought-datasets.git
+git clone https://github.com/andreaeoluz/drought_forecast_binary.git drought_forecast_binary
+git clone https://github.com/andreaeoluz/spi-forecast-continuous.git drought_forecast_regression
+pip install -r drought_forecast_regression/requirements.txt
 ```
 
-`--base-dir` on the first two scripts overrides the sibling project's `outputs/` directory, if you keep it somewhere other than that project's own root.
+Each framework must have run its `precompute-spi` step for the regions of interest (`outputs/<region>/spi_cache/spi_scale_3.pkl`); see their READMEs for the raw data location. `--base-dir` points the scripts to a different `outputs/` directory.
 
 ---
 
-## Requirements
+## Reproducing the paper
 
-This project's own direct dependencies:
+```bash
+cd drought-datasets
 
+# Dataset statistics (all regions, full (p, q) grid)
+python compute_dataset_statistics.py --task regression --all-regions
+python compute_dataset_statistics.py --task binary --all-regions
+
+# Baselines (full (p, q) grid by default), one run per region
+python run_baselines.py --task regression --region Sul
+python run_baselines.py --task classification --region Sul
+
+# Cross-region numbers and figures
+python summarize_all_regions.py
+python plot_drought_prevalence.py
+python plot_south_baselines.py
 ```
-numpy
-scipy
-scikit-learn
-```
 
-Running either script also requires, at import time, a working installation of whichever sibling project `--task` points at (`torch`, `pandas`, `rasterio`, etc.) — see `drought_forecast_binary/README.md` or `drought_forecast_regression/README.md` for that project's own requirements.
+---
+
+## Paper figures and tables
+
+| Paper element | Produced by |
+|---|---|
+| Dataset statistics (SPI distribution, sample counts) | `compute_dataset_statistics.py` → `summarize_all_regions.py` |
+| Drought prevalence figure (`drought_prevalence`) | `plot_drought_prevalence.py` |
+| Baseline tables (appendix) and cross-region baseline summary | `run_baselines.py` → `summarize_all_regions.py` |
+| South baselines vs. q (`south_baselines_vs_q`) | `plot_south_baselines.py` |
+| Downsampling factor (spatial preprocessing) | `analyze_downsampling_events.py` in [drought_forecast_binary](https://github.com/andreaeoluz/drought_forecast_binary) |
+| Study-area map | `generate_study_area_map.py` in [spi-forecast-continuous](https://github.com/andreaeoluz/spi-forecast-continuous) |
+
+---
+
+## Included results
+
+| File | Content |
+|---|---|
+| `dataset_statistics_regression.json` | Continuous dataset statistics, all regions and (p, q) |
+| `dataset_statistics_binary.json` | Binary dataset statistics, all regions, (p, q) and κ |
+| `baselines_regression_<Region>.json` | Regression baselines per region and (p, q) |
+| `baselines_classification_<Region>.json` | Classification baselines per region, (p, q) and κ |
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).

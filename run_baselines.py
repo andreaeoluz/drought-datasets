@@ -10,11 +10,6 @@ Trains persistence / linear / logistic / random-forest baselines per pixel,
 using the same chronological train/val/test split as the main framework.
 Not the full ConvLSTM pipeline - just proof the datasets are learnable.
 
-By default sweeps a reduced (p, q) grid (p=[3,6,12], q=[1,3,6,12], 12
-combinations) - smaller than the real grid search's full grid
-(experiments/grid_search.py: p_values=[3,6,9,12], q_values=[1,3,6,9,12]),
-since the goal here is just to show the datasets are learnable across
-horizons, not to tune hyperparameters. Pass --p/--q to restrict further.
 """
 
 import argparse
@@ -36,8 +31,8 @@ if sys.platform == "win32":
 BINARY_PROJECT = Path(__file__).resolve().parent.parent / "drought_forecast_binary"
 REGRESSION_PROJECT = Path(__file__).resolve().parent.parent / "drought_forecast_regression"
 
-P_VALUES = [3, 6, 12]
-Q_VALUES = [1, 3, 6, 12]
+P_VALUES = [3, 6, 9, 12]
+Q_VALUES = [1, 3, 6, 9, 12]
 
 
 def load_region_data(region: str, task: str, base_dir: str = None):
